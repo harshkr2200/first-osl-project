@@ -1,0 +1,55 @@
+@mixin ul_a{
+font-size: 18px;
+padding: 5px 14px;
+// margin: 5px;
+text-decoration: none;
+padding: 2px 15px;
+color: $black;
+font-weight: 500;
+}
+
+@mixin before_after($side,$width,$height){
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    background: red;
+    left: $side;
+    top: 50%;
+    position: absolute;
+}
+
+@mixin img{
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin text{
+    align-self: flex-end;
+    margin: 0px 14px;
+    margin-bottom: 22px;
+    color:grQay;
+    font-size: 16px;
+}
+
+@mixin publish{
+    padding-right: 24px;
+    margin-bottom: 22px;
+    color: #a5a5a5;
+    font-size: 16px;
+}
+
+@mixin read{
+margin-bottom: 22px;
+color: #a5a5a5;
+font-size: 16px;
+}
+
+@mixin icon{
+    text-decoration: none;
+    padding: 2px;
+    margin: 5px;
+}
